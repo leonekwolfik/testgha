@@ -36,7 +36,7 @@ jobs:
         uses: actions/setup-python@v6.1.0
         with:
           # Version range or exact version of Python or PyPy to use, using SemVer's version range syntax. Reads from .python-version if unset.
-          python-version: '3.13.7'
+          python-version: '3.12'
 
       - name: Check Python
         run: |
