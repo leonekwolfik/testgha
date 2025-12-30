@@ -27,4 +27,6 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo Add other actions to build,
-          echo test, and deploy your project.
+          uname -a
+          uname -r
+          lsb_release -a
