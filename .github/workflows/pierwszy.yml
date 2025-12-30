@@ -53,4 +53,12 @@ jobs:
       - name: Check GCC
         run: |
           gcc --version
+      
+      - name: Build C++ program
+        run: |
+          g++ -std=c++17 -Wall -Wextra -O2 main.cpp -o app
+
+      - name: Run C++ program
+        run: |
+          ./app
           
