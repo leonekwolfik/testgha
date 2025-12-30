@@ -30,3 +30,13 @@ jobs:
           uname -a
           uname -r
           lsb_release -a
+
+      - name: Setup Python
+        uses: actions/setup-python@v6.1.0
+        with:
+          # Version range or exact version of Python or PyPy to use, using SemVer's version range syntax. Reads from .python-version if unset.
+          python-version: '3.13.7'
+
+      - name: Check Python
+        run: |
+          python --version
